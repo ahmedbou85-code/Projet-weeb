@@ -134,6 +134,93 @@ nav ul {
     gap: 2rem;
 }
 
+
+.slider-3d-container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            perspective: 1200px;
+            margin: 50px auto;
+        }
+        
+        .slider-3d {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 1s ease;
+        }
+        
+        .slider-3d-slide {
+            position: absolute;
+            width: 70%;
+            height: 80%;
+            top: 10%;
+            left: 15%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+        
+        .slider-3d-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .slider-3d-slide:nth-child(1) { transform: translateZ(0); }
+        .slider-3d-slide:nth-child(2) { transform: rotateY(90deg) translateZ(350px); }
+        .slider-3d-slide:nth-child(3) { transform: rotateY(180deg) translateZ(350px); }
+        .slider-3d-slide:nth-child(4) { transform: rotateY(270deg) translateZ(350px); }
+        
+        .slider-3d-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        .slider-3d-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+        }
+        
+        .slider-3d-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .slider-3d-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+        
+        .slider-3d-dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+
+
+
+
 nav a {
     text-decoration: none;
     color: var(--dark-color);
@@ -294,11 +381,12 @@ nav a:hover, nav a.active {
 
 #img1{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
       width: 100%;
-      height: 300px;
+      height: 100%;
       object-fit: cover;
+      border-radius: 10px;
 
 }
 
@@ -315,6 +403,7 @@ nav a:hover, nav a.active {
 
 .game-content {
     padding: 1.5rem;
+
 }
 
 .game-title {
@@ -322,6 +411,7 @@ nav a:hover, nav a.active {
     margin-bottom: 0.5rem;
     color: var(--dark-color);
 }
+
 
 .game-description {
     color: var(--secondary-color);
