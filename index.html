@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaaming Woorld </title>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="projet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" role="status" aria-live="polite">
+        <div>
+            <span style="font-size:2.2rem;color:var(--stellar-gold);font-family:var(--font-main);">Gaaming Woorld</span>
+            <div id="loading-progress" aria-label="Loading progress">
+                <div id="loading-bar"></div>
+            </div>
+            <span id="loading-text" style="margin-top:12px;font-size:1rem;color:#fff;">Chargement des jeux...</span>
+        </div>
+    </div>
+
+    <!-- Starfield Background -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <!-- Header avec navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>
+                        <img id="img2" src="gamepad.png" alt="">
+                    </span>
+                    <span> Gaaming Woorld  </span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" >Accueil</a></li>
+                        <li><a href="action.html">action</a></li>
+                        <li><a href="adv.html">Aventure</a></li>
+                        <li><a href="sport.html">sport</a></li>
+                        <li><a href="strateg.html">Stratégie</a></li>
+                        <li><a href="connexion.html" class="active" >Connexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenue sur Gaaming Woorld </h1>
+           
+            <a href="" class="btn">click pour recevoir votre jeux 😈</a>
+        </div>
+    </section>
+
+    <section>
+<div class="slider-3d-container">
+    <div class="slider-3d" id="slider3d">
+        <div class="slider-3d-slide">
+            <img  src="reddead.jpeg" alt="Image 1">
+        </div>
+        <div class="slider-3d-slide">
+            <img src="residentevil.jpeg" alt="Image 2">
+        </div>
+        <div class="slider-3d-slide">
+            <img src="eldenring.jpeg" alt="Image 3">
+        </div>
+        <div class="slider-3d-slide">
+            <img src="ageof.jpeg" alt="Image 4">
+        </div>
+    </div>
+    
+    <div class="slider-3d-controls">
+        <button class="slider-3d-btn prev-btn">&#10094;</button>
+        <button class="slider-3d-btn next-btn">&#10095;</button>
+    </div>
+    
+    <div class="slider-3d-dots">
+        <div class="slider-3d-dot active" data-index="0"></div>
+        <div class="slider-3d-dot" data-index="1"></div>
+        <div class="slider-3d-dot" data-index="2"></div>
+        <div class="slider-3d-dot" data-index="3"></div>
+    </div>
+</div>
+    </section>
+    
+
+    <section class="popular-games" id="popular">
+        <div class="container">
+            <h2 class="section-title">Jeux populaires</h2>
+            <div class="games-grid">
+                <!-- Jeu 1 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.5 ★</span>
+                        </div>
+                    </div>
+                    
+                    <div class="game-content">
+                        <img id="img1" src="ghostofyot.jpeg" alt="">
+                        <h3 class="game-title">Ghost of Yotei</h3>
+                        
+                        <p class="game-description">Une mercenaire cherche vengeance contre les assassins de sa famille dans le Japon féodal, utilisant combat et furtivité pour restaurer l’honneur.</p>
+                        <div class="game-meta">
+                            <span class="game-category">Action</span>
+                            <button class="download-btn" onclick="downloadGame('Cyber Runner')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jeu 2 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #4834d4, #686de0);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.8 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="spiderman.jpeg" alt="spiderman">
+                        <h3 class="game-title">Spiderman 2 </h3>
+                        <p class="game-description">Un jeune héros acquiert des pouvoirs arachnéens et doit protéger sa ville tout en équilibrant sa vie personnelle et ses responsabilités</p>
+                        <div class="game-meta">
+                            <span class="game-category">Aventure</span>
+                            <button class="download-btn" onclick="downloadGame('Lost Kingdom')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jeu 3 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #00d2d3, #54a0ff);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.3 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="reddead.jpeg" alt="">
+                        <h3 class="game-title">Red Dead Redemption </h3>
+                        <p class="game-description">Un ancien hors-la-loi parcourt l’Ouest sauvage, confronté à la loi, aux gangs et à son passé pour chercher rédemption et survie..</p>
+                        <div class="game-meta">
+                            <span class="game-category">Aventure</span>
+                            <button class="download-btn" onclick="downloadGame('Street Ballers')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jeu 4 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #f368e0, #ff9ff3);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.7 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="splifict.jpeg" alt="">
+                        <h3 class="game-title"> Split Fiction </h3>
+                        <p class="game-description">Deux écrivaines se retrouvent piégées dans les mondes de leurs propres histoires — l’une dans un univers de science‑fiction, l’autre dans un univers de fantasy — et doivent coopérer pour surmonter des défis fous et s’échapper. .</p>
+                        <div class="game-meta">
+                            <span class="game-category">Strategie</span>
+                            <button class="download-btn" onclick="downloadGame('Empire Builders')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jeu 5 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="ufc5.jpeg" alt="">
+                        <h3 class="game-title">UFC 5</h3>
+                        <p class="game-description">Défendez la Terre contre des envahisseurs extraterrestres.</p>
+                        <div class="game-meta">
+                            <span class="game-category">Sport</span>
+                            <button class="download-btn" onclick="downloadGame('Space Invaders X')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jeu 6 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #00b894, #55efc4);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.6 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="hollolknight.jpeg" alt="">
+                        <h3 class="game-title">Hollol knight</h3>
+                        <p class="game-description">Un petit chevalier explore un royaume souterrain rempli de créatures dangereuses et de mystères anciens pour découvrir son destin..</p>
+                        <div class="game-meta">
+                            <span class="game-category">aventure</span>
+                            <button class="download-btn" onclick="downloadGame('Puzzle Masters')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #00b894, #55efc4);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.6 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="uncharted.jpeg" alt="">
+                        <h3 class="game-title">Uncharted 4</h3>
+                        <p class="game-description">Un chasseur de trésors parcourt le monde à la recherche d’un trésor légendaire, affrontant ennemis, pièges et secrets du passé..</p>
+                        <div class="game-meta">
+                            <span class="game-category">Autres</span>
+                            <button class="download-btn" onclick="downloadGame('Puzzle Masters')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières nouveautés en jeu</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="Votre adresse email" required id="newsletter-email">
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gaaming Woorld</h3>
+                    <p>Votre destination pour les meilleurs jeux gratuits. Téléchargez, jouez et partagez avec vos amis !</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="projet.html">Accueil</a></li>
+                        <li><a href="action.html">Action</a></li>
+                        <li><a href="adv.html">Aventure</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="strateg.html">Stratégie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Email: yunesahmed@gaamingwoorld.com</li>
+                        <li>Téléphone: +212 00 00 00 00 </li>
+                        <li>Adresse: ourika, marrakech, Maroc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Gaaming Woorld. Tous droits réservés. | Projet réalisé par Yourness Haddouch et Ahmed Boutagant - GR02 -XYZ
+            </div>
+        </div>
+    </footer>
+
+    <script src="projet.js"></script>
+</body>
+</html>

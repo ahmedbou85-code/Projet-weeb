@@ -1,0 +1,236 @@
+<!-- action.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux d'Action - Gaaming Woorld</title>
+    <link rel="stylesheet" href="projet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" role="status" aria-live="polite">
+        <div>
+            <span style="font-size:2.2rem;color:var(--stellar-gold);font-family:var(--font-main);">Gaaming Woorld</span>
+            <div id="loading-progress" aria-label="Loading progress">
+                <div id="loading-bar"></div>
+            </div>
+            <span id="loading-text" style="margin-top:12px;font-size:1rem;color:#fff;">Chargement des jeux d'action...</span>
+        </div>
+    </div>
+
+    <!-- Starfield Background -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <!-- Header avec navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>🎮</span>
+                    <span>Gaaming Woorld</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="action.html" >Action</a></li>
+                        <li><a href="adv.html">Aventure</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="strateg.html">Stratégie</a></li>
+                        <li><a href="connexion.html" class="active" class="auth-btn">Connexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Hero Action -->
+    <section class="hero">
+        <div class="container">
+            <h1>Jeux de sport</h1>
+            <p>Plongez dans l'action pure ! Des jeux palpitants qui vous mettront à l'épreuve.</p>
+            <a href="#games" class="btn">Explorer les jeux</a>
+        </div>
+    </section>
+
+    <!-- Section Jeux d'Action -->
+    <section class="popular-games" id="games">
+        <div class="container">
+            <h2 class="section-title">Jeux de sport  Populaires</h2>
+            <div class="games-grid">
+                <!-- Jeu 1 -->
+
+
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.5 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+
+                        <img id="img1" src="bellmosiala.jpeg" alt="">
+                        <h3 class="game-title">FIFA 26</h3>
+                        <p class="game-description">Les joueurs contrôlent des équipes de football du monde entier, s’affrontant en matchs réalistes pour remporter des titres et devenir champions..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('Ghost of Yotei')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <!-- Jeu 2 -->
+                <div class="game-card">
+                    
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="Formel1 2024.jpeg" alt="">
+                        <h3 class="game-title">fORMILA 1</h3>
+                        <p class="game-description">Des pilotes de course s’affrontent à grande vitesse sur des circuits prestigieux, où précision, stratégie et courage déterminent le vainqueur..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                 
+                 <div class="game-card">
+                    
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="esport.jpeg" alt="">
+                        <h3 class="game-title">efootball</h3>
+                        <p class="game-description">Les joueurs contrôlent des équipes de football virtuelles, rivalisant en ligne avec stratégie et précision pour remporter les matchs et les tournois..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="game-card">
+                    
+
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="nba.jpeg" alt="">
+                        <h3 class="game-title">NBA</h3>
+                        <p class="game-description">Des équipes de basket-ball s’affrontent dans des matchs intenses, où technique, stratégie et travail d’équipe déterminent le champion..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                 <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="ufc.jpeg" alt="">
+                        <h3 class="game-title">UFC </h3>
+                        <p class="game-description">Des athlètes du monde entier s’affrontent dans l’octogone, mêlant force, technique et stratégie pour décrocher le titre de champion..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                 <div class="game-card">
+                    
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="ufc5.jpeg" alt="">
+                        <h3 class="game-title">UFC 5</h3>
+                        <p class="game-description">Des combattants venus du monde entier s’affrontent dans l’octogone, utilisant force, technique et stratégie pour devenir le champion ultime..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="game-card">
+                    
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                    <img id="img1" src="tonyhawk.jpeg" alt="">
+
+                        <h3 class="game-title">TONYHAWK</h3>
+                        <p class="game-description">Les joueurs réalisent des figures de skate spectaculaires dans divers environnements, combinant style, vitesse et créativité pour marquer des points..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="game-card">
+                    
+                    <div class="game-image" style="background: linear-gradient(135deg, #ff9f43, #feca57);">
+                        <div class="game-overlay">
+                            <span class="game-rating">4.2 ★</span>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <img id="img1" src="rockleague.jpeg" alt="">
+                        <h3 class="game-title">LEAGUE</h3>
+                        <p class="game-description">Des joueurs contrôlent des voitures propulsées par des fusées pour marquer des buts dans des matchs rapides et spectaculaires..</p>
+                        <div class="game-meta">
+                            <span class="game-category">sport</span>
+                            <button class="download-btn" onclick="downloadGame('UFC 5')">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ajoutez d'autres jeux d'action ici -->
+            </div>
+        </div>
+    </section>
+
+    <script src="projet.js"></script>
+</body>
+</html>
